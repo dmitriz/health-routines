@@ -19,7 +19,7 @@ Use this folder to track:
 - Thinking snapshots
 - Decisions or events worth remembering
 
-➡ [Create new log](https://github.com/dmitriz/health-routines/new/main/log?filename=<YYYY-MM-DD>-log.md) (manually update date in filename)
+➡ <a href="https://github.com/dmitriz/health-routines/new/main/log?filename=YYYY-MM-DD-log.md" onclick="this.href=this.href.replace('YYYY-MM-DD', new Date().toISOString().slice(0,10))">Create new log</a> (auto-dated)
 
 ---
 
