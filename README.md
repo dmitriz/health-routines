@@ -63,6 +63,6 @@ Scripts in development include:
 You can begin by:
 - Opening an [inbox issue](https://github.com/dmitriz/health-routines/issues/new)
 - Creating a [daily log](https://github.com/dmitriz/health-routines/new/main/log?filename=2024-04-30-log.md)
-- Running the [health reminder script](https://github.com/dmitriz/health-routines/issues/5#user-content-health_reminder_cyclesh)
+- Running the [health reminder script](scripts/health_reminder_cycle.sh)
 
 No formal structure needed. This is your system.
