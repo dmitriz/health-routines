@@ -10,8 +10,11 @@ suggestions=(
 index=0
 
 echo -e "\n✅ Health reminder script started (cycled mode). First tip in 30 minutes.\n"
+# Gracefully handle script termination
+trap 'printf "\n🛑 Health reminder script exiting.\n"; exit 0' SIGINT SIGTERM
 
 while true; do
+    # … rest of your loop …
   sleep 1800
   tput bel
   echo -e "\n==================== HEALTH REMINDER ====================\n"
