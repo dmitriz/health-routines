@@ -1,6 +1,11 @@
 # Health Routines & Resilience System
+![MIT License](https://img.shields.io/github/license/dmitriz/health-routines)
 
-This repository contains a growing set of tools, routines, logs, and scripts designed to support deep work, reduce cognitive fatigue, and maintain sustainable focus throughout the day.
+This repository is an evolving system for:
+
+- Maintaining deep focus during cognitively demanding work
+- Reducing mental fatigue through body-aware habits
+- Building sustainable, low-friction daily routines
 
 It evolves incrementally, based on actual use and experience.
 
@@ -14,11 +19,11 @@ Use this folder to track:
 - Thinking snapshots
 - Decisions or events worth remembering
 
-➡ [Create new log](https://github.com/dmitriz/health-routines/new/main/log?filename=2024-04-30-log.md)
+➡ [Create new log](https://github.com/dmitriz/health-routines/new/main/log?filename=<YYYY-MM-DD>-log.md) (manually update date in filename)
 
 ---
 
-### 2. **Inbox (GitHub Issues)**
+### 2. 📥 Inbox (GitHub Issues)
 Capture ideas, tasks, or notes quickly via issues.
 
 ➡ [Open new inbox item](https://github.com/dmitriz/health-routines/issues/new)
@@ -30,7 +35,8 @@ You can later triage, promote to files, or group related issues.
 ### 3. **Routine Plan**
 Live routine logic and scripts: reminders, eye care, movement, break cycles.
 
-➡ [Routine Plan](https://github.com/dmitriz/health-routines/issues/5)
+- [Routine Plan (Issue)](https://github.com/dmitriz/health-routines/issues/5)
+- [Planned script path](scripts/health_reminder_cycle.sh) *(coming soon)*
 
 Includes:
 - Current movement reminders
@@ -40,12 +46,12 @@ Includes:
 
 ---
 
-## 🛠 Scripts & Automation (Coming Soon)
+## 🔜 Scripts & Automation (Planned)
 
 Scripts in development include:
-- `health_reminder_cycle.sh` (terminal-based cycle reminders)
-- Optional log generator
-- GitHub Action helpers
+- 🔜 `health_reminder_cycle.sh` – terminal reminder script
+- 🔜 GitHub Action to auto-create daily log
+- 🔜 Log summarizer or triage script
 
 ---
 
@@ -62,7 +68,7 @@ Scripts in development include:
 
 You can begin by:
 - Opening an [inbox issue](https://github.com/dmitriz/health-routines/issues/new)
-- Creating a [daily log](https://github.com/dmitriz/health-routines/new/main/log?filename=2024-04-30-log.md)
-- Running the [health reminder script](scripts/health_reminder_cycle.sh)
+- Creating a [daily log](https://github.com/dmitriz/health-routines/new/main/log?filename=<YYYY-MM-DD>-log.md) (manually update date in filename)
+- Running the health reminder script (coming soon)
 
 No formal structure needed. This is your system.
