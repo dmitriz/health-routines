@@ -1,8 +1,9 @@
 <!-- Uncomment and move to .github/ISSUE_TEMPLATE if intended as GitHub issue form -->
-# ---
-# name: Clarification Request
-# about: Structured template for gathering issue clarification details
-# ---
+
+---
+name: Clarification Request
+about: Structured template for gathering issue clarification details
+---
 
 # Clarification Template
 
