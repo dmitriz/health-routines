@@ -1,5 +1,4 @@
 # Health Routines & Resilience System
-![MIT License](https://img.shields.io/github/license/dmitriz/health-routines)
 
 This repository is an evolving system for:
 
