@@ -16,13 +16,13 @@ Briefly describe what the situation is and what triggered it.
 > Example: "Sudden sore throat this morning, no fever."
 
 ---
-
 ## Symptoms or Observations  
 List anything you're noticing or experiencing.  
 
-- [ ] Pain or discomfort  
-- [ ] Physical symptoms  
-- [ ] Environmental changes  
+- [ ] Pain or discomfort (describe location and intensity)
+- [ ] Physical symptoms (fever, nausea, etc.)
+- [ ] Environmental changes (new location, weather, etc.)
+- [ ] Recent relevant activity (exercise, diet change, etc.)
 - [ ] Recent relevant activity  
 
 ---
