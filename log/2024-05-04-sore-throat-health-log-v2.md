@@ -44,4 +44,7 @@
 
 ## Step 3 – Monitoring & Feedback
 
-- Monitor throughout the
+- Monitor throughout the day for any changes in symptoms
+- Reassess in 4-6 hours to determine if interventions are effective
+- Document any new symptoms or improvements
+- Consider medical consultation if symptoms worsen or persist beyond 48 hours
