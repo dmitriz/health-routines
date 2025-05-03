@@ -20,11 +20,17 @@
 
     # Allow suggestions to be loaded from a file if SUGGESTIONS_FILE env var is set
     if [[ -n "$SUGGESTIONS_FILE" && -f "$SUGGESTIONS_FILE" ]]; then
+        mapfile -t file_lines < "$SUGGESTIONS_FILE"
         suggestions=()
-        while IFS= read -r line; do
+        # Function to remove ANSI escape sequences from suggestions
+        sanitize() {
+            sed 's/\x1B\[[0-9;]*[a-zA-Z]//g'
+        }
+        for line in "${file_lines[@]}"; do
             [[ -z "$line" || "$line" =~ ^# ]] && continue
-            suggestions+=("$line")
-        done < "$SUGGESTIONS_FILE"
+            sanitized=$(echo "$line" | sanitize)
+            suggestions+=("$sanitized")
+        done
     fi
 
     # Check if suggestions array is empty
