@@ -15,10 +15,7 @@ trap 'printf "\n🛑 Health reminder script exiting.\n"; exit 0' SIGINT SIGTERM
 
 while true; do
     # … rest of your loop …
-<<<<<<< HEAD
 while true; do
-=======
->>>>>>> 580890764472ba891d9e65b43e1c2d4059359953
   sleep 1800
   tput bel
   echo -e "\n==================== HEALTH REMINDER ====================\n"
