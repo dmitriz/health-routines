@@ -60,7 +60,7 @@ Use LLM to propose a practical next step based on complete user input.
 
 Function Signature
 
-generate_solution({ message: string, context: object }) => {  
+generate_solution({ message: string, context?: object }) => { summary: string, steps: string[], references?: string[] }
   summary: string,  
   steps: string[],  
   references?: string[]  
