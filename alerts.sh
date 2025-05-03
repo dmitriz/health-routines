@@ -1,4 +1,4 @@
-    #!/bin/bash
+#!/bin/bash
 
     # Function to run on exit signals
     cleanup() {
