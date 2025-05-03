@@ -1,6 +1,20 @@
-    #!/bin/bash
+#!/bin/bash
 
-    # Function to run on exit signals
+    # Handles script termination by printing a farewell message and exiting cleanly.
+    #
+    # Outputs:
+    #
+    # * Prints a goodbye message to STDOUT when the script is interrupted or terminated.
+    #
+    # Returns:
+    #
+    # * Exits the script with status 0.
+    #
+    # Example:
+    #
+    # ```bash
+    # trap cleanup INT TERM
+    # ```
     cleanup() {
         echo -e "\n👋 Exiting health reminder script. Stay healthy!"
         exit 0 # Exit successfully
