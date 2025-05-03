@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
     # Handles script termination by printing a farewell message and exiting cleanly.
     #
