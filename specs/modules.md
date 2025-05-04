@@ -23,7 +23,7 @@ triage_message({ message: string }) => {
 ```
 
 Inputs:
-- message: Raw user-submitted string (e.g., a GitHub issue body).
+- message: Raw user-submitted string (e.g., a sanitized GitHub issue body to mitigate injection vulnerabilities).
 
 Outputs:
 - Structured labels to apply (e.g., type/concept, priority/now)
