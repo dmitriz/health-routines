@@ -1,2 +1,1 @@
-- To avoid truncation in chatpgt use a code block with a .txt extension 
-to ensure no Markdown truncation or interference.
+- To avoid truncation in ChatGPT, use a code block with the `.txt` extension. This prevents Markdown-related interference.
