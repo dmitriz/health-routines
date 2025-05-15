@@ -16,7 +16,9 @@ trap 'printf "\n🛑 Health reminder script exiting.\n"; exit 0' SIGINT SIGTERM
 
 while true; do
   sleep 1800
+  echo -e "\nTip: ${suggestions[index]}\n"
   tput bel
+  index=$(( (index + 1) % ${#suggestions[@]} ))
   echo -e "\n==================== HEALTH REMINDER ====================\n"
   echo -e "${suggestions[$index]}\n"
   echo -e "=========================================================\n"
