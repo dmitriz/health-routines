@@ -9,6 +9,7 @@ A general-purpose checklist for evaluating the reliability and neutrality of hea
 - [ ] Is the author or publishing organization clearly identified?
 - [ ] Are the author’s credentials or expertise relevant to the topic?
 - [ ] Is the funding source or sponsor clearly disclosed?
+- [ ] Are author conflicts of interest clearly declared?
 - [ ] Is the publication medium traceable and accessible (e.g., journal, report, site)?
 
 ---
@@ -17,7 +18,8 @@ A general-purpose checklist for evaluating the reliability and neutrality of hea
 
 - [ ] Is there evidence that the content was created **independent of commercial pressure**?
 - [ ] Is the study or article **free from corporate or institutional influence** that could bias results?
-- [ ] If funding is provided, is the **source financially neutral** to the outcome?
+- [ ] Does the research team or institution have a **history of balanced, critical reporting**?
+- [ ] Are all potential conflicts of interest (financial and non-financial) of the authors/organization clearly disclosed?
 - [ ] Does the research team or institution have a **history of balanced, critical reporting**?
 - [ ] Are all potential conflicts of interest (financial and non-financial) of the authors/organization clearly disclosed?
 
@@ -29,11 +31,13 @@ A general-purpose checklist for evaluating the reliability and neutrality of hea
 - [ ] Is the cited evidence traceable and relevant to the claims?
 - [ ] Does the content distinguish between expert opinion and published data?
 
----
-
 ## Peer Review and Scientific Rigor
 
 - [ ] Was the study or source peer-reviewed?
+- [ ] Is the publication reputable (e.g., PubMed-indexed, impact factor, open-access archives)?
+- [ ] If preprint or non-peer-reviewed, is the data available and clearly explained?
+- [ ] Are conflicts of interest properly disclosed by the authors?
+- [ ] Are conflicts of interest properly disclosed by the authors?
 - [ ] Is the publication reputable (e.g., PubMed-indexed, impact factor, open-access archives)?
 - [ ] If preprint or non-peer-reviewed, is the data available and clearly explained?
 - [ ] Are conflicts of interest properly disclosed by the authors?
@@ -45,22 +49,36 @@ A general-purpose checklist for evaluating the reliability and neutrality of hea
 
 - [ ] Have similar findings been replicated by independent researchers?
 - [ ] Is the content consistent with current expert consensus?
-- [ ] If divergent, is high-quality evidence provided to support the exception?
-
----
 
 ## Methodological Validity
 
 - [ ] Is the study design appropriate for the question (e.g., RCT, longitudinal, meta-analysis)?
 - [ ] Is the sample size sufficient to support conclusions?
 - [ ] Are the statistical methods appropriate and transparently described?
+- [ ] Does the study discuss the practical or clinical significance of its findings, not just statistical significance?
 
 ---
+
 ## Data and Code Transparency
 
 - [ ] Are raw data and analysis code publicly available or accessible?
 - [ ] Is there clear documentation or metadata supporting reproducibility?
+
 ---
+
+- [ ] Is the study design appropriate for the question (e.g., RCT, longitudinal, meta-analysis)?
+- [ ] Is the sample size sufficient to support conclusions?
+- [ ] Are the statistical methods appropriate and transparently described?
+
+---
+
+## Data Accessibility
+
+- [ ] Are raw data and analysis code publicly available or accessible?
+- [ ] Is there clear documentation or metadata supporting reproducibility?
+
+---
+
 - [ ] Does the study discuss the practical or clinical significance of its findings, not just statistical significance?
 
 ---
