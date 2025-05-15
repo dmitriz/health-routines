@@ -37,11 +37,6 @@ A general-purpose checklist for evaluating the reliability and neutrality of hea
 - [ ] Is the publication reputable (e.g., PubMed-indexed, impact factor, open-access archives)?
 - [ ] If preprint or non-peer-reviewed, is the data available and clearly explained?
 - [ ] Are conflicts of interest properly disclosed by the authors?
-- [ ] Are conflicts of interest properly disclosed by the authors?
-- [ ] Is the publication reputable (e.g., PubMed-indexed, impact factor, open-access archives)?
-- [ ] If preprint or non-peer-reviewed, is the data available and clearly explained?
-- [ ] Are conflicts of interest properly disclosed by the authors?
-- [ ] Are conflicts of interest properly disclosed by the authors?
 
 ---
 
