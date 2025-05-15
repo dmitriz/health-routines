@@ -1,6 +1,6 @@
 # Digestive Health Research Repository
 
-### Last updated: 2025-05-15
+## Last updated: 2025-05-15
 
 ## Table of Contents
 
