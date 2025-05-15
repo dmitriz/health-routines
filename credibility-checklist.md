@@ -19,6 +19,7 @@ A general-purpose checklist for evaluating the reliability and neutrality of hea
 - [ ] Is the study or article **free from corporate or institutional influence** that could bias results?
 - [ ] If funding is provided, is the **source financially neutral** to the outcome?
 - [ ] Does the research team or institution have a **history of balanced, critical reporting**?
+- [ ] Are all potential conflicts of interest (financial and non-financial) of the authors/organization clearly disclosed?
 
 ---
 
