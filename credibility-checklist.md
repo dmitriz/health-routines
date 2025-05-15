@@ -52,6 +52,13 @@ A general-purpose checklist for evaluating the reliability and neutrality of hea
 - [ ] Is the study design appropriate for the question (e.g., RCT, longitudinal, meta-analysis)?
 - [ ] Is the sample size sufficient to support conclusions?
 - [ ] Are the statistical methods appropriate and transparently described?
+
+---
+## Data and Code Transparency
+
+- [ ] Are raw data and analysis code publicly available or accessible?
+- [ ] Is there clear documentation or metadata supporting reproducibility?
+---
 - [ ] Does the study discuss the practical or clinical significance of its findings, not just statistical significance?
 
 ---
