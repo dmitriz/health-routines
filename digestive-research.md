@@ -71,8 +71,8 @@ A curated collection of peer-reviewed, open-access studies and scholarly reviews
   *Summary:* A controlled clinical study on ACV’s impact on gastric motility.
 
 - **Apple Cider Vinegar and Glycemic Control**  
-  *Source:* [Frontiers in Nutrition](https://www.frontiersin.org/articles/10.3389/fnut.2025.1528383/full)  
-  *Summary:* Explores ACV’s role in regulating postprandial glucose and insulin sensitivity.
+  *Source:* [Journal of Functional Foods](https://www.sciencedirect.com/science/article/abs/pii/S1756464618303852)  
+  *Summary:* Explores ACV's role in regulating postprandial glucose and insulin sensitivity.
 
 ---
 
