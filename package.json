@@ -1,0 +1,28 @@
+{
+  "name": "health-routines",
+  "version": "1.0.0",
+  "description": "This repository is an evolving system for:",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "pretest": "chmod +x .git/hooks/*"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/__tests__/**/*.test.js"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriz/health-routines.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriz/health-routines/issues"
+  },
+  "homepage": "https://github.com/dmitriz/health-routines#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
