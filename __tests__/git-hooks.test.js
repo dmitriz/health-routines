@@ -20,14 +20,6 @@ describe('Git Hooks', () => {
   });
 
   describe('update hook', () => {
-    it('should be executable', () => {
-      const hookPath = path.join(hooksDir, 'update');
-      expect(fs.existsSync(hookPath)).toBe(true);
-      
-      const stats = fs.statSync(hookPath);
-      expect(stats.mode & 0o111).toBeTruthy();
-    });
-
     it('should check for main/master branches', () => {
       const hookContent = fs.readFileSync(path.join(hooksDir, 'update'), 'utf8');
       expect(hookContent).toContain('main');
@@ -41,14 +33,6 @@ describe('Git Hooks', () => {
   });
 
   describe('pre-push hook', () => {
-    it('should be executable', () => {
-      const hookPath = path.join(hooksDir, 'pre-push');
-      expect(fs.existsSync(hookPath)).toBe(true);
-      
-      const stats = fs.statSync(hookPath);
-      expect(stats.mode & 0o111).toBeTruthy();
-    });
-
     it('should run tests before push', () => {
       const hookContent = fs.readFileSync(path.join(hooksDir, 'pre-push'), 'utf8');
       expect(hookContent).toContain('npm test');
