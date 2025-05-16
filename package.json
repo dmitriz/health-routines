@@ -1,11 +1,13 @@
 {
   "name": "health-routines",
   "version": "1.0.0",
-  "description": "This repository is an evolving system for:",
+  "description": "This repository is an evolving system for managing health routines and habits.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "pretest": "chmod +x .git/hooks/*"
+    "pretest": "chmod +x .git/hooks/* || true",
+    "install-hooks": "node install-hooks.js",
+    "postinstall": "npm run install-hooks"
   },
   "jest": {
     "testEnvironment": "node",

@@ -8,6 +8,22 @@ This repository is an evolving system for managing health routines and habits.
 
 This repository uses Git hooks to ensure code quality and prevent common mistakes. The following hooks are configured:
 
+### Installation
+
+The Git hooks are automatically installed when you run:
+
+```bash
+npm install
+```
+
+You can manually install or update the hooks with:
+
+```bash
+npm run install-hooks
+```
+
+**[Detailed Git Hooks Guide](docs/git-hooks-guide.md)** - For more installation options and troubleshooting.
+
 ### Pre-commit Hook
 - **Location**: `.git/hooks/pre-commit`
 - **Functionality**:
