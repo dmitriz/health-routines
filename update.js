@@ -15,9 +15,13 @@ const PROTECTED_BRANCHES = ['refs/heads/main', 'refs/heads/master'];
 
 try {
   // Check if this is a push to a protected branch
-  if (PROTECTED_BRANCHES.includes(refName)) {
-    // Securely obtain commit details to count parent entries using execFileSync
-    const commitOutput = execFileSync('git', ['cat-file', '-p', newRev], { encoding: 'utf8' });
+    // Check if this is a direct push (not a merge)
+    // Check if the new revision has multiple parents (indicating a merge)
+    const isMerge = execSync(
+      `git cat-file -p ${newRev} | grep -c "^parent "`,
+      { stdio: 'pipe' }
+    ).toString().trim() > 1;
+    if (!isMerge) {
     const parentCount = commitOutput.split('\n').filter(line => line.startsWith('parent ')).length;
     if (parentCount < 2) {
       console.error('⛔ Error: Direct pushes to protected branches are not allowed.');
