@@ -12,13 +12,11 @@ console.log(`🔍 Running update hook for ${refName}...`);
 
 // Protected branches that require pull requests
 const PROTECTED_BRANCHES = ['refs/heads/main', 'refs/heads/master'];
-
 // Check if this is a push to a protected branch
 if (PROTECTED_BRANCHES.includes(refName)) {
   try {
     // Check if this is a direct push (not a merge)
-    const isMerge = execSync(`git merge-base --is-ancestor ${oldRev} ${newRev}`, { stdio: 'pipe' }).toString().trim() === '';
-    
+    const isMerge = execSync(`git rev-parse --verify -q ${oldRev}^0`, { stdio: 'pipe' }).length > 0;
     if (!isMerge) {
       console.error('⛔ Error: Direct pushes to protected branches are not allowed.');
       console.error('Please create a feature branch and submit a pull request instead.');
