@@ -24,15 +24,15 @@ if (!fs.existsSync(hooksDir)) {
 
 // Function to install a hook
 function installHook(sourceFile, hookName) {
-  const sourcePath = path.join(rootDir, sourceFile);
-  const hookPath = path.join(hooksDir, hookName);
-  
-  if (!fs.existsSync(sourcePath)) {
-    console.error(`❌ Error: Source file ${sourceFile} not found.`);
-    return false;
-  }
-  
   try {
+    const sourcePath = path.join(rootDir, sourceFile);
+    const hookPath = path.join(hooksDir, hookName);
+    
+    if (!fs.existsSync(sourcePath)) {
+      console.error(`❌ Error: Source file ${sourceFile} not found.`);
+      return false;
+    }
+    
     // Read the source file
     const sourceContent = fs.readFileSync(sourcePath, 'utf8');
     
@@ -56,6 +56,12 @@ function installPrePushHook() {
   let prePushContent;
   
   try {
+    // Check if hook already exists
+    if (fs.existsSync(hookPath)) {
+      console.log('⚠️ Pre-push hook already exists. Backing up to pre-push.bak');
+      fs.copyFileSync(hookPath, `${hookPath}.bak`);
+    }
+    
     // Try to load from file if exists
     const prePushPath = path.join(rootDir, 'pre-push.sh');
     if (fs.existsSync(prePushPath)) {
@@ -90,7 +96,7 @@ echo "✅ Pre-push checks passed. Proceeding with push..."
 exit 0
 `;
     }
-    
+
     // Write the pre-push hook
     fs.writeFileSync(hookPath, prePushContent);
     
@@ -112,9 +118,7 @@ const updateInstalled = installHook('update.js', 'update');
 const prePushInstalled = installPrePushHook();
 
 if (preCommitInstalled && updateInstalled && prePushInstalled) {
-  console.log('🎉 All Git hooks were installed successfully.');
-  console.log('✨ Your repository is now set up with the required Git hooks.');
+  console.log('✅ All hooks installed successfully!');
 } else {
-  console.error('⚠️ Some hooks could not be installed. Please check the errors above.');
-  process.exit(1);
+  console.log('⚠️ Some hooks failed to install. Please check the error messages above.');
 }

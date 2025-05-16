@@ -72,6 +72,20 @@ function ensureGitignore() {
 console.log('🔍 Running pre-commit checks...');
 
 try {
+  // Ensure we're in the repository root
+  const gitRoot = execSync('git rev-parse --show-toplevel', { stdio: 'pipe' })
+    .toString()
+    .trim();
+  const currentDir = process.cwd();
+  
+  if (gitRoot !== currentDir) {
+    console.warn(
+      `⚠️ Warning: Not running from repository root. Current: ${currentDir}, Root: ${gitRoot}`
+    );
+    process.chdir(gitRoot);
+    console.log(`✅ Changed directory to repository root: ${gitRoot}`);
+  }
+
   // Ensure .gitignore exists and has required patterns
   ensureGitignore();
 
