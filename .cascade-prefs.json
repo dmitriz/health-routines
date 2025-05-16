@@ -1,0 +1,34 @@
+{
+  "preferences": {
+    "batch_operations": {
+      "enabled": true,
+      "max_approvals_per_session": 1,
+      "combine_commands": true
+    },
+    "git_workflow": {
+      "enforce_single_branch": "main",
+      "create_feature_branch": true,
+      "pull_before_start": true,
+      "run_tests_before_commit": true,
+      "prevent_direct_commits_to": ["main", "master"],
+      "auto_cleanup_merged": true,
+      "require_pr_for_main": true
+    },
+    "safety_checks": {
+      "confirm_destructive_actions": true,
+      "prevent_force_push": true,
+      "require_clean_working_directory": true,
+      "preview_changes_first": true
+    },
+    "notifications": {
+      "on_unsafe_operation": true,
+      "on_branch_switch": true
+    },
+    "documentation": {
+      "include_comments": true,
+      "explain_changes": true,
+      "generate_pr_template": true
+    }
+  },
+  "version": "1.0.0"
+}

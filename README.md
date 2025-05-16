@@ -10,6 +10,34 @@ It evolves incrementally, based on actual use and experience.
 
 ---
 
+## Git Hooks
+
+This repository includes Git hooks to maintain code quality:
+
+### Pre-commit Hook
+- **Location**: `.git/hooks/pre-commit`
+- **Purpose**: Runs tests before allowing a commit
+- **To disable**: `chmod -x .git/hooks/pre-commit`
+- **To enable**: `chmod +x .git/hooks/pre-commit`
+
+### Pre-push Hook
+- **Location**: `.git/hooks/pre-push`
+- **Purpose**: Runs tests before allowing a push
+- **To disable**: `chmod -x .git/hooks/pre-push`
+- **To enable**: `chmod +x .git/hooks/pre-push`
+
+### Verifying Hooks
+To verify the hooks are working:
+
+1. Make a small change to a test file
+2. Try to commit:
+   ```bash
+   git add .
+   git commit -m "Test commit"
+   ```
+3. The pre-commit hook should run tests automatically if a test script is defined in package.json
+4. If tests pass, commit succeeds. If they fail, commit is blocked
+
 ## ✅ Core Components
 
 ### 1. `/log/` – Reflections, Notes, Daily Progress
