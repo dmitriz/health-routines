@@ -17,6 +17,11 @@ describe('Git Hooks', () => {
     if (fs.existsSync(testFile)) {
       fs.unlinkSync(testFile);
     }
+    try {
+      execSync('git rm --cached test-file.txt 2>/dev/null || true');
+    } catch (e) {
+      // Ignore errors if file is not tracked
+    }
   });
 
   describe('update hook', () => {
