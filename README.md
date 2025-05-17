@@ -22,8 +22,6 @@ You can manually install or update the hooks with:
 npm run install-hooks
 ```
 
-**[Detailed Git Hooks Guide](docs/git-hooks-guide.md)** - For more installation options and troubleshooting.
-
 ### Pre-commit Hook
 - **Location**: `.git/hooks/pre-commit`
 - **Functionality**:

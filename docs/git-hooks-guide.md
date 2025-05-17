@@ -60,35 +60,4 @@ If you encounter issues with the hooks:
 1. Ensure Node.js is installed and available in your PATH
 2. Check that the hooks are executable: `ls -la .git/hooks/`
 3. Manually reinstall the hooks: `npm run install-hooks`
-4. If needed, temporarily disable specific hooks:
-   - Pre-commit: `chmod -x .git/hooks/pre-commit`
-   - Update: `chmod -x .git/hooks/update`
-   - Pre-push: `chmod -x .git/hooks/pre-push`
-5. To re-enable a hook: `chmod +x .git/hooks/hook-name`
-
-## Common Issues
-
-### "Error: Cannot find module"
-
-This usually indicates a missing dependency. Try running:
-
-```bash
-npm install
-```
-
-### "Permission denied" when running hooks
-
-Fix by making the hooks executable:
-
-```bash
-chmod +x .git/hooks/*
-```
-
-### Git hooks not running at all
-
-Ensure hooks are correctly installed and executable:
-
-```bash
-ls -la .git/hooks/
-npm run install-hooks
-```
+4. If needed, temporarily disable a hook: `chmod -x .git/hooks/pre-commit`
