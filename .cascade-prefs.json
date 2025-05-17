@@ -1,0 +1,102 @@
+{
+  "rules": {
+    "dependencies": {
+      "require_justification": true,
+      "prefer_builtin": true,
+      "no_peer_deps_auto_install": true
+    },
+    "files": {
+      "ensure_gitignore": {
+        "enabled": true,
+        "required_patterns": [
+          "# Dependencies",
+          "node_modules/",
+          "package-lock.json",
+          "yarn.lock",
+          "",
+          "# Environment",
+          ".env",
+          ".env.*",
+          "!.env.example",
+          "",
+          "# Build output",
+          "dist/",
+          "build/",
+          "",
+          "# Logs",
+          "logs",
+          "*.log",
+          "npm-debug.log*",
+          "yarn-debug.log*",
+          "yarn-error.log*"
+        ]
+      }
+    }
+  },
+  "preferences": {
+    "safe_commands": {
+      "git": ["status", "branch", "log"],
+      "npm": ["test", "run"],
+      "node": ["--version", "-v"]
+    },
+    "batch_operations": {
+      "enabled": true,
+      "max_approvals_per_session": 1,
+      "require_manual_approval": false,
+      "combine_commands": true
+    },
+    "combined_commands": {
+      "enabled": true,
+      "max_commands": 5,
+      "safe_combinations": {
+        "git": ["status", "add", "commit"],
+        "npm": ["test", "run"],
+        "node": ["--version", "-v"]
+      }
+    },
+    "auto_run": {
+      "allow_safe_commands": true,
+      "safe_commands": {
+        "git": ["status", "log", "add"],
+        "npm": ["test"],
+        "node": ["--version", "-v"]
+      },
+      "script_based_execution": true,
+      "utilities": {
+        "safe_command": {
+          "module": "./utils/safe-command",
+          "function": "runSafeCommand"
+        }
+      }
+    },
+    "unsafe_commands": {
+      "npm": ["install", "uninstall", "add"]
+    },
+    "git_workflow": {
+      "enforce_single_branch": true,
+      "create_feature_branches": true,
+      "require_pull_requests": true,
+      "safety_checks": {
+        "prevent_direct_main_commits": true,
+        "require_tests_before_commit": true,
+        "verify_branch_protection": true
+      }
+    },
+    "safety_checks": {
+      "confirm_destructive_actions": true,
+      "prevent_force_push": true,
+      "require_clean_working_directory": true,
+      "preview_changes_first": true
+    },
+    "notifications": {
+      "on_unsafe_operation": true,
+      "on_branch_switch": true
+    },
+    "documentation": {
+      "include_comments": true,
+      "explain_changes": true,
+      "generate_pr_template": true
+    }
+  },
+  "version": "1.0.0"
+}
